@@ -31,7 +31,12 @@ db.once("open", () => console.log("connected"))
 app.post("/putData", (req, res) => {
   job = new JobPosting() //based on Mongoose schema
   //TODO: Fill in the rest of the fields here before saving object
-  job.title = req.body.title
+
+  job.title = req.body.jobTitle
+  job.description = req.body.jobDescription
+  job.managerID = req.body.managerID
+  job.postedDate = req.body.postingDate
+
 
   job.save(err => { //sends object to database
     if (err) return res.json({ success: false, error: err });
