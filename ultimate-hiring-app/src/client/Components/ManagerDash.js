@@ -10,18 +10,23 @@ class ManagerDash extends Component {
 
   render () {
     return (
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
+      //temp line breaks: DELETE LATER
+      <div className="container">
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+        <div className="row">
+          <div className="col-sm">
             <JobPostingCard />
           </div>
-          <div class="col-sm">
+          <div className="col-sm">
             <JobPostingCard />
           </div>
-          <div class="col-sm">
+          <div className="col-sm">
             <JobPostingCard />
           </div>
-          <div class="col-sm">
+          <div className="col-sm">
             <JobPostingCard />
           </div>
         </div>
